@@ -1,0 +1,11 @@
+{
+    "6783b6d888bb9": {
+        "email": "admin@ikarrental.hu",
+        "password": "$2y$10$z.k3vKORfKDzpMVI5nOHiuGPiT5v\/ta1DwYqcGqzwPpl3.aL2MnUG",
+        "fullname": "Admin",
+        "roles": [
+            "admin"
+        ],
+        "id": "6783b6d888bb9"
+    }
+}

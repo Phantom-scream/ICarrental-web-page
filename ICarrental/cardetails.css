@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8FAE5;
+    color: #333;
+}
+
+header {
+    background-color: #43766C;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+.car-details {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.car-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.car-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.car-details th,
+.car-details td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.car-details th {
+    background-color: #f4f4f9;
+    font-weight: bold;
+}
+
+.book-button {
+    background-color: #76453B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #F8CBA6;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #B19470;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #F1E4C3;
+}
+
+.actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.actions form {
+    display: inline-block;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .car-details {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .car-details table {
+        font-size: 0.9rem;
+    }
+
+    .book-button,
+    .back-link {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+    }
+
+    .car-details table {
+        font-size: 0.8rem;
+    }
+
+    .book-button,
+    .back-link {
+        font-size: 0.8rem;
+    }
+}

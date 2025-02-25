@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #146C94; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background: #AFD3E2; 
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button,
+.back-home .button {
+    display: block;
+    width: calc(100% - 20px);
+    max-width: 360px;
+    padding: 12px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+form button {
+    background: #19A7CE;
+    color: white;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+.back-home .button {
+    background: #37B7C3;
+    color: white;
+    text-decoration: none;
+}
+
+.back-home .button:hover {
+    background: #0056b3;
+}
+
+.feedback {
+    color: red;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    form button,
+    .back-home .button {
+        font-size: 14px;
+        width: calc(100% - 10px);
+    }
+}

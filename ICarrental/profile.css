@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5C8D89;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1, h2 {
+    margin: 0 0 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #226597;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.logout, .back-home {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.logout button {
+    background-color: #f44336;
+}
+
+.logout button:hover {
+    background-color: #da190b;
+}
+
+.back-home .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #74B49B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.back-home .button:hover {
+    background-color: #53D397;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 1rem;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 0.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .logout, .back-home {
+        text-align: center;
+    }
+
+    .back-home .button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
