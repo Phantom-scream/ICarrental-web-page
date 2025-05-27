@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: icarrental-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: icarrental
+  template:
+    metadata:
+      labels:
+        app: icarrental
+    spec:
+      containers:
+        - name: icarrental
+          image: phantom949/icarrental-php:latest
+          ports:
+            - containerPort: 80
