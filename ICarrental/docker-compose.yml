@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  icarrental-app:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    container_name: icarrental_php
